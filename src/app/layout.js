@@ -1,5 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Indie_Flower,Caveat } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import SplashCursor from "@/components/SplashCursor";
+import localFont from "next/font/local";
+
+
+const minecraftFont = localFont({
+  src: './fonts/minecraft_font.ttf',
+  display: 'swap',
+  variable: '--font-minecraft',
+});
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -8,6 +19,15 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+const indieFlower = Indie_Flower({
+  variable: "--font-indie-flower",
+  subsets: ["latin"], 
+  weight: "400",
+});
+const caveat = Caveat({
+  variable: "--font-caveat",
   subsets: ["latin"],
 });
 
@@ -19,9 +39,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${minecraftFont.variable} ${caveat.variable} ${indieFlower.variable} antialiased`}
       >
+        <Navbar/>
+        <SplashCursor />
         {children}
       </body>
     </html>
