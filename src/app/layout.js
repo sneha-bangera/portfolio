@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${minecraftFont.variable} ${caveat.variable} ${indieFlower.variable} antialiased`}
       >
         <Navbar/>
-        <SplashCursor />
+        {/* <SplashCursor /> */}
         {children}
       </body>
     </html>

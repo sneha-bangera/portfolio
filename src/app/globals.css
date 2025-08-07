@@ -53,6 +53,68 @@ body{
 }
 
 
+/* btn n card */
+.btn-pixel {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider */
+  border-width: 2px;
+  border-color: white;
+  /* background-color: hsl(var(--background)); */
+  /* color: hsl(var(--primary)); */
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem;
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem;
+  transition-property: all;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.btn-pixel:hover {
+  box-shadow: 4px 4px 0px 0px white;
+}
+
+.btn-pixel-secondary {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider */
+  border-width: 2px;
+  border-color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.btn-pixel-secondary:hover {
+  background-color: black;
+  /* color: hsl(var(--secondary-foreground)); */
+  box-shadow: 4px 4px 0px 0px black;
+}
+
+.card-pixel {
+  border-radius: 0;
+  border-width: 1px;
+  border-color: hsl(var(--border));
+  background-color: hsl(var(--card));
+  padding: 1.5rem; /* p-6 */
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+.card-pixel:hover {
+  border-color: hsl(var(--primary));
+  box-shadow: 4px 4px 0px 0px white;
+  transform: translateX(-0.25rem) translateY(-0.25rem);
+}
+
+
+
 
 
 
