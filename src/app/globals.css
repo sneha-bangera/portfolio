@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 body{
+  cursor: none;
   font-family: var(--font-minecraft);
   background-color: #0F172A; /* Replace with your --tw-color-background if using custom Tailwind colors */
 }
@@ -118,6 +119,21 @@ body{
 
 
 
+/* custom-cursor */
+.custom-cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: white; /* Brighter white */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  mix-blend-mode: difference;
+  box-shadow: 0 0 8px rgb(255, 255, 255), 
+              0 0 12px rgb(255, 255, 255);
+}
 
 
 

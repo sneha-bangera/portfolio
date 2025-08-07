@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SplashCursor from "@/components/SplashCursor";
 import localFont from "next/font/local";
-
+import CustomCursor from "@/components/CustomCursor";
 
 const minecraftFont = localFont({
   src: './fonts/minecraft_font.ttf',
@@ -13,7 +13,7 @@ const minecraftFont = localFont({
 
 const fredericka = Fredericka_the_Great({
   variable: "--font-fredericka-the-great",
-  subsets: ['latein'],
+  subsets: ['latin'],
   weight: "400"
 })
 const geistSans = Geist({
@@ -48,7 +48,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${fredericka.variable} ${geistMono.variable} ${minecraftFont.variable} ${caveat.variable} ${indieFlower.variable} antialiased`}
       >
         <Navbar/>
-        {/* <SplashCursor /> */}
+        <CustomCursor/>
+        <SplashCursor />
         {children}
       </body>
     </html>
