@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Indie_Flower,Caveat } from "next/font/google";
+import { Geist, Geist_Mono, Indie_Flower,Caveat, Fredericka_the_Great } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SplashCursor from "@/components/SplashCursor";
@@ -11,7 +11,11 @@ const minecraftFont = localFont({
   variable: '--font-minecraft',
 });
 
-
+const fredericka = Fredericka_the_Great({
+  variable: "--font-fredericka-the-great",
+  subsets: ['latein'],
+  weight: "400"
+})
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -41,7 +45,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${minecraftFont.variable} ${caveat.variable} ${indieFlower.variable} antialiased`}
+        className={`${geistSans.variable} ${fredericka.variable} ${geistMono.variable} ${minecraftFont.variable} ${caveat.variable} ${indieFlower.variable} antialiased`}
       >
         <Navbar/>
         {/* <SplashCursor /> */}

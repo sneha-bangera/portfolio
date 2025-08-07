@@ -4,45 +4,45 @@ const Projects = () => {
   const projects = [
     {
       title: "Thrift Up",
-      description: "Full-stack e-commerce solution with modern UI/UX design and secure payment integration for seamless shopping experience.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      description: "A thrifting platform where users can buy, sell, and list second-hand fashion items. Includes a community section for user posts and discussions.",
+      technologies: ["Next.js", "TailwindCSS","Node.js", "MongoDB"],
+      githubUrl: "https://github.com/sneha-bangera/ThriftUp",
+      liveUrl: "https://thrift-up.vercel.app"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates and intuitive drag-and-drop functionality.",
-      technologies: ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      title: "BlogPost",
+      description: "A minimalistic blogging website where users can write, publish, and browse blogs on various topics. Focuses on a clean writing experience.",
+      technologies: ["Next.js", "Node.js", "MongoDB"],
+      githubUrl: "https://github.com/sneha-bangera/NextJS",
+      liveUrl: "https://blog-post-ten-zeta.vercel.app/"
     },
     {
-      title: "Weather Dashboard",
-      description: "Interactive weather dashboard with location-based forecasts and beautiful data visualizations for climate insights.",
-      technologies: ["React", "TypeScript", "Chart.js", "API"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      title: "E-Commerce Website",
+      description: "Fully functional e-commerce platform with customer-facing store and admin dashboard for product and order management.",
+      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      githubUrl: "https://github.com/sneha-bangera/Shopper-E-commerce",
+      // liveUrl: "https://example.com"
     },
     {
-      title: "Social Media Clone",
-      description: "Feature-rich social media platform with user authentication, real-time messaging, and content sharing capabilities.",
-      technologies: ["Next.js", "Firebase", "Tailwind", "Vercel"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      title: "Recipe Website",
+      description: "Built a React-based recipe site with dynamic API fetching and search functionality for filtering recipes.",
+      technologies: ["React", "TailwindCSS", "Node.js", "API"],
+      githubUrl: "https://github.com/sneha-bangera/Recipe-website",
+      // liveUrl: "https://example.com"
     },
     {
       title: "Portfolio Website",
-      description: "Responsive portfolio website with pixel art theme showcasing projects and skills with modern animations.",
-      technologies: ["React", "TypeScript", "Tailwind", "Framer"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      description: "Responsive portfolio website showcasing about me, projects and skills sections with modern animations.",
+      technologies: ["Next.js", "TailwindCSS", "Framer"],
+      githubUrl: "https://github.com/sneha-bangera/portfolio",
+      liveUrl: "https://portfolio-chi-nine-73.vercel.app/"
     },
     {
-      title: "API Management Tool",
-      description: "Developer tool for API testing and documentation with automated testing features and performance monitoring.",
-      technologies: ["Python", "FastAPI", "Docker", "AWS"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      title: "Loan Risk Prediction Model",
+      description: "A machine learning model that predicts loan risk level (Low, Medium, High) based on financial, demographic and many other features.",
+      technologies: ["Python", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn"],
+      githubUrl: "https://github.com/sneha-bangera/Loan_Risk_Prediction",
+      // liveUrl: "https://example.com"
     }
   ];
 

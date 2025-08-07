@@ -5,6 +5,10 @@ body{
   background-color: #0F172A; /* Replace with your --tw-color-background if using custom Tailwind colors */
 }
 
+.title-font{
+  font-family: var(--font-fredericka-the-great);
+}
+
 /* navbar */
 .nav-pixel {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -15,8 +19,7 @@ body{
   transition-duration: 300ms;
 }
 .nav-pixel:hover {
-  border-color: #6EE7B7; /* Replace this with your --tw-color-primary if using custom Tailwind colors */
-  color: #6EE7B7; /* same as above */
+  border-color: white; /* Replace this with your --tw-color-primary if using custom Tailwind colors */
 }
 
 

@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 text-white bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="font-mono font-bold text-xl">{'<PORTFOLIO/>'}</div>
+        <div className="font-mono font-bold text-xl">{'{sneha}'}</div>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex space-x-8">
