@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen py-20 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-6xl font-bold mb-16 text-center font-mono pixel-glow">
+        <h2 className="text-4xl md:text-6xl mb-16 text-center title-font pixel-glow">
           {'<CONTACT/>'}
         </h2>
 
@@ -43,7 +43,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-4 font-mono text-secondary px-5 pt-3">
               {'> GET_IN_TOUCH'}
             </h3>
-            <p className="font-mono text-muted-foreground leading-relaxed text-justify text-lg px-5 pb-5">
+            <p className="font-mono text-muted-foreground leading-relaxed text-justify text-gray-300 text-lg px-5 pb-5">
               Ready to collaborate on your next project? Let's connect and build
               something amazing together. I'm always open to discussing new
               opportunities and ideas.
@@ -69,7 +69,7 @@ const Contact = () => {
                     <h4 className="font-mono font-bold text-lg group-hover:pixel-glow transition-all duration-300">
                       {link.name}
                     </h4>
-                    <p className="font-mono text-muted-foreground text-sm">
+                    <p className="font-mono text-muted-foreground text-sm text-gray-300">
                       {link.handle}
                     </p>
                   </div>
@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
 
           <div className="text-center mt-16">
-            <div className="font-mono text-muted-foreground text-sm">
+            <div className="font-mono text-muted-foreground text-sm text-gray-300">
               {'<footer>'}
               <br />
               © 2025 Sneha Bangera

@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section id="about" className="min-h-screen py-20 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-6xl font-bold mb-16 text-center font-mono pixel-glow">
+        <h2 className="text-4xl md:text-6xl mb-16 text-center title-font">
           {'<ABOUT_ME/>'}
         </h2>
 
@@ -24,7 +24,7 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4 font-mono text-secondary px-5 pt-3.5">
                 {'> WHO_AM_I'}
               </h3>
-              <p className="font-mono text-muted-foreground leading-relaxed text-justify px-5 pb-5">
+              <p className="font-mono text-muted-foreground leading-relaxed text-justify px-5 pb-5 text-gray-300">
                 Hey there! I’m Sneha, a third-year AI & ML Engineering student and a self-driven Web Developer
                 passionate about turning ideas into impactful digital experiences.
                 I love building clean, responsive websites and am currently seeking internship opportunities.
@@ -51,11 +51,11 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-6 font-mono text-primary px-5 pt-3">
               {'> SKILLS'}
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 px-5 pb-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 px-5 pb-5 ">
               {skills.map((skill, index) => (
                 <div
                   key={skill}
-                  className="skill-tag m-2"
+                  className="skill-tag m-2 font-mono"
                   style={{
                     animationDelay: `${index * 100}ms`,
                   }}

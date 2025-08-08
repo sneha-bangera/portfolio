@@ -7,7 +7,8 @@ body{
 }
 
 .title-font{
-  font-family: var(--font-fredericka-the-great);
+  font-family: var(--font-rajdhani);
+  font-style: italic;
 }
 
 /* navbar */
@@ -34,11 +35,10 @@ body{
 }
 
 .skill-tag {
-  /* font-family: monospace; */
   background-color: #1e293b;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color: #f8fafc;
+  color: #d1d5dc;
   border: 1px solid #334155;
   text-align: center;
   animation: fadeInUp 0.5s ease-in-out both;
@@ -62,43 +62,19 @@ body{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em; /* tracking-wider */
-  border-width: 2px;
-  border-color: white;
-  /* background-color: hsl(var(--background)); */
-  /* color: hsl(var(--primary)); */
-  padding-left: 1.5rem; /* px-6 */
+  letter-spacing: 0.05em; 
+  border-width: 0.5px;
+  border-color: #d1d5dc;
+  padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 0.75rem; /* py-3 */
+  padding-top: 0.75rem; 
   padding-bottom: 0.75rem;
   transition-property: all;
   transition-duration: 200ms;
   cursor: pointer;
 }
-
 .btn-pixel:hover {
   box-shadow: 4px 4px 0px 0px white;
-}
-
-.btn-pixel-secondary {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em; /* tracking-wider */
-  border-width: 2px;
-  border-color: white;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  transition-property: all;
-  transition-duration: 200ms;
-}
-
-.btn-pixel-secondary:hover {
-  background-color: black;
-  /* color: hsl(var(--secondary-foreground)); */
-  box-shadow: 4px 4px 0px 0px black;
 }
 
 .card-pixel {
@@ -118,22 +94,37 @@ body{
 }
 
 
-
-/* custom-cursor */
-.custom-cursor {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background-color: white; /* Brighter white */
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease-out;
-  mix-blend-mode: difference;
-  box-shadow: 0 0 8px rgb(255, 255, 255), 
-              0 0 12px rgb(255, 255, 255);
+/* hero_text */
+.shiny-text {
+  color: #f7f7f7a6; 
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+  font-family: var(--font-ms-madi);
+  font-size: 100px;
+  /* font-style: italic; */
 }
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+.shiny-text.disabled {
+  animation: none;
+}
+
 
 
 

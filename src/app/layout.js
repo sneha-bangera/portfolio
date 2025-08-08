@@ -1,9 +1,8 @@
-import { Geist, Geist_Mono, Indie_Flower,Caveat, Fredericka_the_Great } from "next/font/google";
+import { Geist, Geist_Mono, Indie_Flower,Caveat, Ms_Madi, Rajdhani } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SplashCursor from "@/components/SplashCursor";
 import localFont from "next/font/local";
-import CustomCursor from "@/components/CustomCursor";
 
 const minecraftFont = localFont({
   src: './fonts/minecraft_font.ttf',
@@ -11,8 +10,14 @@ const minecraftFont = localFont({
   variable: '--font-minecraft',
 });
 
-const fredericka = Fredericka_the_Great({
-  variable: "--font-fredericka-the-great",
+const rajdhani = Rajdhani({
+  variable: "--font-rajdhani",
+  subsets: ['latin'],
+  weight: "300"
+})
+
+const msMadi = Ms_Madi({
+  variable: "--font-ms-madi",
   subsets: ['latin'],
   weight: "400"
 })
@@ -45,10 +50,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body
-        className={`${geistSans.variable} ${fredericka.variable} ${geistMono.variable} ${minecraftFont.variable} ${caveat.variable} ${indieFlower.variable} antialiased`}
+        className={`${rajdhani.variable} ${geistSans.variable} ${msMadi.variable} ${geistMono.variable} ${minecraftFont.variable} ${caveat.variable} ${indieFlower.variable} antialiased`}
       >
         <Navbar/>
-        <CustomCursor/>
         <SplashCursor />
         {children}
       </body>

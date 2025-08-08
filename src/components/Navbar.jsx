@@ -36,7 +36,7 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false); // close menu on mobile after click
+      setIsMobileMenuOpen(false); 
     }
   };
 
@@ -52,7 +52,7 @@ const Navbar = () => {
               <button
                 onClick={() => scrollToSection(item.id)}
                 className={`nav-pixel ${
-                  activeSection === item.id ? 'text-primary border-primary pixel-glow' : ''
+                  activeSection === item.id ? 'text-primary border-primary' : ''
                 }`}
               >
                 {item.label}
@@ -80,7 +80,7 @@ const Navbar = () => {
               <button
                 onClick={() => scrollToSection(item.id)}
                 className={`w-full text-left nav-pixel block py-2 ${
-                  activeSection === item.id ? 'text-primary border-primary pixel-glow' : ''
+                  activeSection === item.id ? 'text-primary border-primary' : ''
                 }`}
               >
                 {item.label}

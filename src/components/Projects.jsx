@@ -49,7 +49,7 @@ const Projects = () => {
   return (
     <section id="projects" className="min-h-screen py-20 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-6xl font-bold mb-16 text-center font-mono pixel-glow">
+        <h2 className="text-4xl md:text-6xl mb-16 text-center title-font pixel-glow">
           {'<PROJECTS/>'}
         </h2>
         
@@ -79,14 +79,14 @@ const Projects = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 border border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-200 hover:shadow-[2px_2px_0px_0px_hsl(var(--accent))]"
+                    className="p-2 border border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-200 "
                   >
                     <ExternalLink size={18} />
                   </a>
                 </div>
               </div>
               
-              <p className="font-mono text-sm text-muted-foreground mb-4 leading-relaxed">
+              <p className="font-mono text-sm  mb-4 leading-relaxed text-gray-300">
                 {project.description}
               </p>
               
@@ -94,7 +94,7 @@ const Projects = () => {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-1 text-xs font-mono border border-muted text-muted-foreground hover:border-primary hover:text-primary transition-all duration-200"
+                    className="px-2 py-1 text-xs font-mono border border-muted text-gray-300"
                   >
                     {tech}
                   </span>

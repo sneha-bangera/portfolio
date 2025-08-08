@@ -1,6 +1,7 @@
 'use client';
 
 import { TypeAnimation } from 'react-type-animation';
+import ShinyText from './ShinyText';
 
 const HomeSection = () => {
 
@@ -13,12 +14,11 @@ const HomeSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative text-white">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl md:text-8xl mb-6 pixel-glow title-font">
-            {/* HELLO_WORLD */}
+          {/* <h1 className="text-5xl sm:text-6xl md:text-8xl mb-6 pixel-glow title-font">
             Hey, I'm Sneha
-          </h1>
-
-          <div className="text-xl sm:text-2xl md:text-3xl mb-8 font-mono">
+          </h1> */}
+          <ShinyText text="Hey, I'm Sneha!" disabled={false} speed={3} className='custom-class' />
+          <div className="text-base sm:text-lg md:text-xl mb-8 font-mono">
             <TypeAnimation
               sequence={[
                 'Engineer. Coder. Creator.',
@@ -37,7 +37,7 @@ const HomeSection = () => {
             />
           </div>
 
-          <p className="text-base sm:text-lg md:text-xl mb-12 font-mono text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl mb-12 font-mono text-muted-foreground max-w-2xl mx-auto text-gray-300">
             Turning ideas into interactive web experiences. <br />I code, create, and build with precision and creativity.
           </p>
 
